@@ -13,8 +13,11 @@ def simulate_game(m, n):
     return player1_wins == m
 
 # пример использования
-cnt = 0
+cnt1 = 0
+cnt2 = 0
 for i in range(1000000):
     if simulate_game(4, 3):
-        cnt += 1
-print((cnt/i)/(1-cnt/i))
+        cnt1 += 1
+    else:
+        cnt2 += 1
+print((cnt1/i)/(cnt2/i))
